@@ -1,13 +1,15 @@
 <html>
-<a class="popup" href="index.html">Ouvrir le calculateur</a>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script>
-jQuery(document).ready(function($) {
-	$('a.popup').on('click', function(){
-		newwindow=window.open($(this).attr('href'),'','height=480,width=320');
-		if (window.focus) {newwindow.focus()}
-		return false;
-	});
-});
-</script>
+<head>
+	<title>Exemple d'intégration du calculateur</title>
+	<meta charset="UTF-8" />
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="page-header" style="margin-top:0px;">
+			<h1>Intégration <small>du calculateur</small></h1>
+			<p>Pour permettre à vos utilisateurs d'accéder au calculateur, vous pouvez insérer un lien comme celui présenté ci-dessous.</p>
+		</div>
+		<br />
+		<a href="#" onClick="window.open('http://dev.lfconsult.work/coeurduvar/index.html','Calculateur','toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=0,copyhistory=0,width=320,height=480,left=0,top=0')">Ouvrir le calculateur</a>
 </html>
