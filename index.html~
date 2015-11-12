@@ -28,9 +28,9 @@
 		  </div>
 		  <div class="form-group" data-bind="visible: freqVidage">
 		    <div class="col-sm-offset-2 col-sm-10 text-center">
-			<h4><i class="fa fa-angle-double-down"></i> Vidange en moyenne tous les <i class="fa fa-angle-double-down"></i></h4>
+			<h4><i class="fa fa-chevron-down"></i> Vidange en moyenne tous les <i class="fa fa-chevron-down"></i></h4>
 			<hr style="margin-bottom:10px;margin-top:10px;" />
-			<span style="font-size:2.9em;" data-bind="text: freqVidage"></span> ans
+			<i class="fa fa-hand-o-right"></i> <span style="font-size:2.9em;" data-bind="text: freqVidage"></span> ans
 		    </div>
 		  </div>
 		</form>

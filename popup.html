@@ -1,0 +1,13 @@
+<html>
+<a class="popup" href="index.html">Ouvrir le calculateur</a>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+jQuery(document).ready(function($) {
+	$('a.popup').on('click', function(){
+		newwindow=window.open($(this).attr('href'),'','height=480,width=320');
+		if (window.focus) {newwindow.focus()}
+		return false;
+	});
+});
+</script>
+</html>
