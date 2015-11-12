@@ -11,7 +11,7 @@
 
 	<div class="container">
 		<div class="page-header" style="margin-top:0px;">
-			<h1>Calculateur <small>Fréquence de vidange de fosse septique</small></h1>
+			<h1>Fréquence <small> vidange de fosse septique</small></h1>
 			<p>Veuillez remplir les deux champs ci-dessous pour obtenir la fréquence de vidange de votre fosse septique.</p>
 		</div>
 
@@ -53,6 +53,7 @@
 			    	var temp_nbPersonne = this.nbPersonne();
 			    	temp_nbPersonne = parseFloat(this.nbPersonne().replace(',','.').replace(' ',''));
 			    	temp_result = (((temp_volume/2)/0.26)/temp_nbPersonne)/365;
+			    	$(':focus').blur();
 			        return (Math.round(temp_result*2)/2).toFixed(1);
 		    	}else{
 		    		return null;
